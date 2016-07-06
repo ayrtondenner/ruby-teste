@@ -1,0 +1,19 @@
+<h1>Welcome!</h1>
+
+<%
+    dateTime_utc = DateTime.now
+    dateTime_br  = dateTime_utc.in_time_zone(-3)
+    
+    print_time_utc   = dateTime_utc.strftime("%d/%m/%Y, UTC: %H:%M:%S")
+    print_time_br    = dateTime_br.strftime("BR: %H:%M:%S")
+    
+    final_value      = print_time_utc + ", " + print_time_br 
+    
+    # => "14/09/2011 17:02"
+
+    # current_time.next_month.strftime "%d/%m/%Y %H:%M"
+    # => "14/10/2011 17:02"
+
+%>
+
+<p>Página acessada no dia <%= final_value %></p>
