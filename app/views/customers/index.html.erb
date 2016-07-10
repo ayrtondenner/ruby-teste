@@ -12,10 +12,10 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Birthday</th>
-      <th>Observation</th>
+      <th><%= t("name") %></th>
+      <th><%= t("email") %></th>
+      <th><%= t("birthday") %></th>
+      <th><%= t("observation") %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -25,11 +25,11 @@
       <tr>
         <td><%= customer.name %></td>
         <td><%= customer.email %></td>
-        <td><%= customer.birthday %></td>
+        <td><%= l(customer.birthday) %></td>
         <td><%= customer.observation %></td>
-        <td><%= link_to 'Show', customer %></td>
-        <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
-        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('show'), customer %></td>
+        <td><%= link_to t('edit'), edit_customer_path(customer) %></td>
+        <td><%= link_to t('destroy'), customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

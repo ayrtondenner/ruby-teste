@@ -1,24 +1,24 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong><%= t('name')%>:</strong>
   <%= @customer.name %>
 </p>
 
 <p>
-  <strong>Email:</strong>
+  <strong><%= t("email")%>:</strong>
   <%= @customer.email %>
 </p>
 
 <p>
-  <strong>Birthday:</strong>
-  <%= @customer.birthday %>
+  <strong><%= t("birthday")%>:</strong>
+  <%= l(@customer.birthday) %>
 </p>
 
 <p>
-  <strong>Observation:</strong>
+  <strong><%= t("observation")%>:</strong>
   <%= @customer.observation %>
 </p>
 
-<%= link_to 'Edit', edit_customer_path(@customer) %> |
-<%= link_to 'Back', customers_path %>
+<%= link_to t('edit'), edit_customer_path(@customer) %> |
+<%= link_to t('back'), customers_path %>

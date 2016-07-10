@@ -1,0 +1,12 @@
+pt-BR:
+    hello: "OLÁ!"
+    
+    show:         "Mostrar"
+    edit:         "Editar"
+    back:         "Voltar"
+    destroy:      "Deletar"
+    
+    name:         "Nome"
+    email:        "Email"
+    birthday:     "Aniversário"
+    observation:  "Observação"

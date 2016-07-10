@@ -20,4 +20,14 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+    hello: "Hello world"
+  
+    show:         "Show"
+    edit:         "Edit"
+    back:         "Back"
+    destroy:      "Destroy"
+    
+    name:         "Name"
+    email:        "Email"
+    birthday:     "Birthday"
+    observation:  "Observation"
